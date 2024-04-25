@@ -3,17 +3,15 @@ import { Menu, Image, Button, Sidebar, Segment } from "semantic-ui-react";
 import logoImage from "./picture/clhs_logo.png";
 
 const Header = () => {
-    return <Menu>
-            <Menu.Item>
-                <Image src={logoImage} size="mini" />
-            </Menu.Item>
+    return <div className="header_div">
         
-            <Menu.Item>中大壢中熱食部線上訂餐系統</Menu.Item>
+        <img src={logoImage} alt="logoImage"/>
 
-            <Menu.Menu position="right">
-                <Button>登入</Button>
-            </Menu.Menu>
-        </Menu>;
+        中大壢中熱食部線上訂餐系統
+
+        <button>登入</button>
+
+    </div>;
     
 
 };

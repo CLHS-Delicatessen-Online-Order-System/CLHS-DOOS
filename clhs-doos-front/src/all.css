@@ -1,63 +1,93 @@
+
 .layout_wrapper_header{
     display: flex;
     flex-direction: column;
     height: 100vh;
     .main{
-      flex: 1;
-      display: flex;
-      .content{
         flex: 1;
-        font-size: 2rem;
-        font-weight: bold;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 20;
-      }
+        .content{
+            flex: 1;
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 20;
+        }
     }
-  }
+}
+
+
 
 .footer_div{
     width: 100%;
-    height: 20;
+    height: 50;
     font-size: 2rem;
     font-weight: bold;
     border-top: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
+
+
 
 .header_div{
     width: 100%;
     height: 20;
-    background-color: #AAAAAA;
+    background-color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
     color:#000;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    justify-content: space-between; /* 將子元素在容器中平均分佈 */
+    padding: 0 32px; /* 在左右各留出 10 像素的空間 */
     position: static;
-  }
+}
 
-  .slider_div{
+
+.header_div button{
+    background-color: #f5f5DC; /* 按鈕背景顏色 */
+    color: #884513; /* 文字顏色 */
+    border: none; /* 移除邊框 */
+    border-radius: 4px; /* 圓角 */
+    padding: 10px 10px; /* 內邊距 */
+    cursor: pointer; /* 指針類型 */
+    margin-bottom: 10px;
+}
+
+
+.header_div img {
+    width: 70px; /* 圖片寬度 */
+    height: auto; /* 自動計算高度，保持圖片比例 */
+}
+
+
+.slider_div{
     font-size: 2rem;
     font-weight: bold;
-    background-color: #777777;
+    background-color: #ffffff;
     color:#000;
     width: 200px;
     padding-top: 20px;
     text-align: center;
+}
 
-    button{
-      background-color: #8C8C72; /* 按鈕背景顏色 */
-      color: #fff; /* 文字顏色 */
-      border: none; /* 移除邊框 */
-      border-radius: 4px; /* 圓角 */
-      padding: 10px 20px; /* 內邊距 */
-      cursor: pointer; /* 指針類型 */
-      margin-bottom: 10px;
-    }
 
-  }
+.slider_div button{
+    background-color: #f5f5DC; /* 按鈕背景顏色 */
+    color: #884513; /* 文字顏色 */
+    border: none; /* 移除邊框 */
+    border-radius: 4px; /* 圓角 */
+    padding: 10px 10px; /* 內邊距 */
+    cursor: pointer; /* 指針類型 */
+    margin-bottom: 10px;
+}
+
+
+
+  
