@@ -2,7 +2,7 @@ import React from "react";
 import Header from './Header'; //上面
 import Slider from './Slider'; //側邊
 import Footer from './Footer'; //下面
-import './Layout.css';
+import './all.css';
 
 
 const Layout = ({ children, className }) => {
